@@ -154,10 +154,10 @@ extern int  yywrap();
 %type <rightValList> RightValList
 %type <type> Type
 
+%left AND OR
+%left GREATER LESS GREATER_EQ LESS_EQ EQUAL NOT_EQUAL
 %left ADD SUB
 %left MUL DIV
-%left GREATER LESS GREATER_EQ LESS_EQ EQUAL NOT_EQUAL
-%left AND OR
 %right ASSIGN
 
 %start Program
