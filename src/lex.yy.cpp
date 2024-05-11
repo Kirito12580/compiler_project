@@ -1039,7 +1039,7 @@ YY_RULE_SETUP
 case 43:
 YY_RULE_SETUP
 #line 73 "lexer.lex"
-{ yylval.pos = A_Pos(line, col); col+=yyleng; return RET; }
+{ yylval.pos = A_Pos(line, col); col+=yyleng; return RETURN; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP

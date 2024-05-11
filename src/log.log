@@ -1,0 +1,70 @@
+yacc -o y.tab.cpp -d parser.yacc -v --debug
+clang++ -std=c++17 -g -c y.tab.cpp
+lex -o lex.yy.cpp lexer.lex 
+clang++ -std=c++17 -g -c lex.yy.cpp
+clang++ -std=c++17 -g -c TeaplAst.cpp
+clang++ -std=c++17 -g -c TeaplaAst.cpp
+clang++ -std=c++17 -g -c PrintTeaplaAst.cpp
+clang++ -std=c++17 -g -c llvm_ir.cpp
+clang++ -std=c++17 -g -c ast2llvm.cpp
+clang++ -std=c++17 -g -c printLLVM.cpp
+clang++ -std=c++17 -g -c temp.cpp
+clang++ -std=c++17 -g -c compiler.cpp
+clang++ -std=c++17 -g -o compiler y.tab.o lex.yy.o TeaplAst.o TeaplaAst.o PrintTeaplaAst.o compiler.o llvm_ir.o ast2llvm.o printLLVM.o temp.o 
+test07: 
+pass
+
+int_io: 
+pass
+
+int_split: 
+pass
+
+hanoi: 
+pass
+
+test06: 
+pass
+
+full_conn: 
+pass
+
+register_alloca: 
+pass
+
+dijkstra: 
+pass
+
+palindrome_number: 
+pass
+
+bin_search: 
+pass
+
+test01: 
+pass
+
+test03: 
+pass
+
+sort_test7: 
+pass
+
+jump_game: 
+pass
+
+sort_test5: 
+pass
+
+test05: 
+pass
+
+test02: 
+pass
+
+test04: 
+pass
+
+line_search: 
+pass
+

@@ -158,7 +158,7 @@ extern int yydebug;
     STRUCT = 284,
     FN = 285,
     ARROW = 286,
-    RET = 287,
+    RETURN = 287,
     DOT = 288,
     CONTINUE = 289,
     BREAK = 290,
@@ -198,7 +198,7 @@ extern int yydebug;
 #define STRUCT 284
 #define FN 285
 #define ARROW 286
-#define RET 287
+#define RETURN 287
 #define DOT 288
 #define CONTINUE 289
 #define BREAK 290
@@ -667,8 +667,8 @@ static const char *const yytname[] =
   "NUM", "ID", "LPAREN", "RPAREN", "AND", "OR", "NOT", "GREATER", "LESS",
   "GREATER_EQ", "LESS_EQ", "EQUAL", "NOT_EQUAL", "ASSIGN", "LET", "COLON",
   "COMMA", "LBRACKET", "RBRACKET", "LBRACE", "RBRACE", "STRUCT", "FN",
-  "ARROW", "RET", "DOT", "CONTINUE", "BREAK", "IF", "ELSE", "WHILE", "INT",
-  "$accept", "Program", "ProgramElementList", "ProgramElement",
+  "ARROW", "RETURN", "DOT", "CONTINUE", "BREAK", "IF", "ELSE", "WHILE",
+  "INT", "$accept", "Program", "ProgramElementList", "ProgramElement",
   "FnDeclStmt", "CodeBlockStmt", "CodeBlockStmtList", "ReturnStmt",
   "CallStmt", "WhileStmt", "IfStmt", "FnDef", "ParamDecl", "FnDecl",
   "StructDef", "VarDeclList", "VarDeclStmt", "VarDef", "VarDefArray",

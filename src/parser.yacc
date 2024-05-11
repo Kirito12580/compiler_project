@@ -103,7 +103,7 @@ extern int  yywrap();
 %token <pos> STRUCT
 %token <pos> FN
 %token <pos> ARROW
-%token <pos> RET
+%token <pos> RETURN
 %token <pos> DOT
 %token <pos> CONTINUE
 %token <pos> BREAK
@@ -257,11 +257,11 @@ CodeBlockStmtList: CodeBlockStmt CodeBlockStmtList
 }
 ;
 
-ReturnStmt: RET RightVal SEMICOLON
+ReturnStmt: RETURN RightVal SEMICOLON
 {
   $$ = A_ReturnStmt($1, $2);
 }
-| RET SEMICOLON
+| RETURN SEMICOLON
 {
   $$ = A_ReturnStmt($1, NULL);
 }

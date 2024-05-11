@@ -78,7 +78,7 @@ extern int yydebug;
     STRUCT = 284,
     FN = 285,
     ARROW = 286,
-    RET = 287,
+    RETURN = 287,
     DOT = 288,
     CONTINUE = 289,
     BREAK = 290,
@@ -118,7 +118,7 @@ extern int yydebug;
 #define STRUCT 284
 #define FN 285
 #define ARROW 286
-#define RET 287
+#define RETURN 287
 #define DOT 288
 #define CONTINUE 289
 #define BREAK 290
